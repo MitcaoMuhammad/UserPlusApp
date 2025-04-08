@@ -41,13 +41,20 @@ export default function Dashboard() {
 					className='py-[12px] px-[20px] border border-[#1a1a1a] rounded-[30px] text-[16px] fixed top-[10px] left-[31%] bg-[#fff] text-[#333] shadow-[0_4px_8px_rgba(0,0,0,0.1)] transition-all duration-300 ease-in-out w-[80%] max-w-[500px] focus:shadow-[0_0_5px_rgba(153,153,153,0.3)] focus:bg-[#fff] focus:scale-[1.05] hover:scale-[1.02]placeholder:text-[#666]'
 					placeholder='Search...'
 				/>
-				<div className='notification-wrapper'>
-					<button className='notification-btn' onClick={toggleMenu}>
-						<img src='./notification.svg' alt='Notifications' />
+				<div className=' relative inline-block z-20'>
+					<button
+						className='bg-none border-none cursor-pointer w-[40px] h-[40px] flex justify-center items-center rounded-[50%] transition-all duration-200 ease-in-out border border-[#1a1a1a] hover:scale-[1.1] bg-[#ffffff1a]'
+						onClick={toggleMenu}
+					>
+						<img
+							className='w-[24px] h-[24px]'
+							src='./notification.svg'
+							alt='Notifications'
+						/>
 					</button>
 					{menuOpen && (
-						<div className='notification-menu'>
-							<ul>
+						<div className=' absolute top-[50px] right-0 bg-[#fff] text-[#333] shadow-[0_4px_10px_rgba(0,0,0,0.1)] w-[250px] rounded-[10px] p-[10px] z-99 border border-[#1a1a1a]'>
+							<ul className='list-none p-0 m-0 z-20'>
 								{notifications.length > 0 ? (
 									notifications.map((msg, index) => <li key={index}>{msg}</li>)
 								) : (

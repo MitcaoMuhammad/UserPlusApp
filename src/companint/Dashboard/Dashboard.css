@@ -59,68 +59,11 @@ tr {
 	transform: scale(1.1);
 }
 
-.notification-wrapper {
-	position: relative;
-	display: inline-block;
-	z-index: 20;
+li {
+	@apply p-[10px] border-b border-b-[##ffffff1a] cursor-pointer transition-all duration-200 ease-in-out border z-20;
 }
 
-.notification-btn {
-	background: none;
-	border: none;
-	cursor: pointer;
-	width: 40px;
-	height: 40px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 50%;
-	transition: transform 0.2s ease-in-out;
-	padding: 10px;
-	transition: all 0.2s ease-in-out;
-	border: #1a1a1a 1px solid;
-}
-
-.notification-btn:hover {
-	transform: scale(1.1);
-	background: rgba(255, 255, 255, 0.1);
-}
-
-.notification-btn img {
-	width: 24px;
-	height: 24px;
-}
-
-.notification-menu {
-	position: absolute;
-	top: 50px;
-	right: 0;
-	background: #fff;
-	color: #333;
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-	width: 250px;
-	border-radius: 10px;
-	padding: 10px;
-	z-index: 99;
-	border: #1a1a1a 1px solid;
-}
-
-.notification-menu ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	z-index: 20;
-}
-
-.notification-menu li {
-	padding: 10px;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-	cursor: pointer;
-	transition: background 0.2s ease-in-out;
-	z-index: 20;
-}
-
-.notification-menu li:last-child {
+li:last-child {
 	border-bottom: none;
 	z-index: 20;
 }
