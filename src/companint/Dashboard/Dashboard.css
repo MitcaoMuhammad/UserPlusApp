@@ -42,37 +42,6 @@ tr {
 	align-items: center;
 }
 
-.confirm-btn,
-.cancel-btn {
-	padding: 12px 20px;
-	margin: 10px;
-	border-radius: 6px;
-	font-size: 16px;
-	cursor: pointer;
-	transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.confirm-btn {
-	background-color: #e74c3c;
-	color: white;
-}
-
-.confirm-btn:hover {
-	background-color: #c0392b;
-	transform: scale(1.05);
-}
-
-.cancel-btn {
-	background-color: #95a5a6;
-	color: white;
-	border: none;
-}
-
-.cancel-btn:hover {
-	background-color: #7f8c8d;
-	transform: scale(1.05);
-}
-
 .modal-overlay {
 	position: fixed;
 	top: 0;

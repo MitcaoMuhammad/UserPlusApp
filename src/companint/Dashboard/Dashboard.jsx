@@ -110,10 +110,16 @@ export default function Dashboard() {
 				<div className='modal-overlay'>
 					<div className='modal'>
 						<p>Are you sure you want to delete this person?</p>
-						<button className='confirm-btn' onClick={handleConfirmDelete}>
+						<button
+							className='py-[12px] px-[20px] m-[10px] rounded-[6px] text-[16px] cursor-pointer transition-all duration-300 ease-in-out bg-[#e74c3c] text-white hover:bg-[#c0392b] hover:scale-[1.05]'
+							onClick={handleConfirmDelete}
+						>
 							Yes
 						</button>
-						<button className='cancel-btn' onClick={handleCancelDelete}>
+						<button
+							className='py-[12px] px-[20px] m-[10px] rounded-[6px] text-[16px] cursor-pointer transition-all duration-300 ease-in-out bg-[#95a5a6] text-white border-none hover:bg-[#c0392b] hover:scale-[1.05]'
+							onClick={handleCancelDelete}
+						>
 							No
 						</button>
 					</div>
