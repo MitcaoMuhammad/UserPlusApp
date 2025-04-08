@@ -107,9 +107,11 @@ export default function Dashboard() {
 				</tbody>
 			</table>
 			{deleteId !== null && (
-				<div className='modal-overlay'>
-					<div className='modal'>
-						<p>Are you sure you want to delete this person?</p>
+				<div className='fixed top-0 left-0 w-full h-full bg-[#ffffffe6] flex justify-center items-center z-100 animate-fadeIn'>
+					<div className='bg-white shadow-[0_4px_15px_rgba(0,0,0,0.1)] p-[30px] rounded-[10px] w-[350px] text-center animate-slideUp'>
+						<p className='text-[16px] text-[#1a1a1a] mb-[20px]'>
+							Are you sure you want to delete this person?
+						</p>
 						<button
 							className='py-[12px] px-[20px] m-[10px] rounded-[6px] text-[16px] cursor-pointer transition-all duration-300 ease-in-out bg-[#e74c3c] text-white hover:bg-[#c0392b] hover:scale-[1.05]'
 							onClick={handleConfirmDelete}
@@ -126,9 +128,16 @@ export default function Dashboard() {
 				</div>
 			)}
 			{imageModal && (
-				<div className='modal-overlay' onClick={() => setImageModal(null)}>
-					<div className='modal'>
-						<img src={imageModal} alt='Preview' className='modal-image' />
+				<div
+					className='fixed top-0 left-0 w-full h-full bg-[#ffffffe6] flex justify-center items-center z-100 animate-fadeIn'
+					onClick={() => setImageModal(null)}
+				>
+					<div className='bg-white shadow-[0_4px_15px_rgba(0,0,0,0.1)] p-[30px] rounded-[10px] w-[350px] text-center animate-slideUp'>
+						<img
+							src={imageModal}
+							alt='Preview'
+							className=' w-full rounded-[10px] object-contain shadow-[0_4px_15px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out hover:scale-[1.05]'
+						/>
 					</div>
 				</div>
 			)}
