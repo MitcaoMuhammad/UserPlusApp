@@ -43,7 +43,7 @@ export default function Dashboard() {
 				/>
 				<div className=' relative inline-block z-20'>
 					<button
-						className='bg-none border-none cursor-pointer w-[40px] h-[40px] flex justify-center items-center rounded-[50%] transition-all duration-200 ease-in-out border border-[#1a1a1a] hover:scale-[1.1] bg-[#ffffff1a]'
+						className='bg-none cursor-pointer w-[40px] h-[40px] flex justify-center items-center rounded-[50%] transition-all duration-200 ease-in-out border-[1px] border-solid border-[#1a1a1a] hover:scale-[1.1] bg-[#ffffff1a]'
 						onClick={toggleMenu}
 					>
 						<img
